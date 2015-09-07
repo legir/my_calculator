@@ -6,7 +6,7 @@ class String
       return factors.map(&:calculate).inject(op) if factors.size > 1
     end
     # Improve outlook
-    (to_i - to_f) < 0 ? to_f : to_i
+    to_f
   end
   alias_method :calc, :calculate
 end
